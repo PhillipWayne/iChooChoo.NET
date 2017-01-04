@@ -1,0 +1,115 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal2.Master.cs" Inherits="ZM.iChooChoo.Client.Web.Principal2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<link rel="stylesheet" id="appstyle" href="~/styles/style.css" />
+	<link rel="stylesheet" id="gfonts" href="https://fonts.googleapis.com/css?family=Sanchez:400,400italic|Maven+Pro:400,700" type='text/css' />
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+	<!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
+    <!-- Bootstrap core CSS -->
+    <link href="~/styles/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="~/styles/ie10-viewport-bug-workaround.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="navbar.css" rel="stylesheet" />
+
+    <script src="<%=ResolveClientUrl("~/scripts/ie-emulation-modes-warning.js") %>"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header class="main-header">
+	    <div class="wrapper">
+		    <div class="logo-wrap">
+			    <asp:HyperLink runat="server" ID="hypRoot" NavigateUrl="~" CssClass="logotext" />
+		    </div>
+                  <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Project name</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
+              <li><a href="../navbar-static-top/">Static top</a></li>
+              <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+
+		    <nav class="main-menu" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+			    <a id="toggle-menu-icon"><span class="icon-list"></span></a>
+			    <ul id="menu-principal" class="top-level-menu">
+				    <li id="menu-item-1" class="menu-item menu-item-object-page current-menu-item page_item"><asp:HyperLink runat="server" ID="hypMnuItm1" NavigateUrl="~">Home</asp:HyperLink></li>
+				    <li id="menu-item-2" class="menu-item menu-item-object-page current-menu-item page_item"><asp:HyperLink runat="server" ID="hypMnuItm2" NavigateUrl="~/settings">Settings</asp:HyperLink>
+                        <ul class="sub-menu">
+                            <li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><asp:HyperLink runat="server" ID="hypMnuItm21" NavigateUrl="~/settings">Settings</asp:HyperLink></li>                        </ul>
+				    </li>
+			    </ul>
+		    </nav>
+	    </div>
+    </header>
+    <section class="description headerbar">
+	    <div class="wrapper">
+		    <h1><%=PageTitle %></h1>
+	    </div>
+    </section>
+
+    <form id="form1" runat="server">
+    <section class="content">
+	    <div class="wrapper">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+    </section>
+    </form>
+
+    <footer class="main-footer" role="contentinfo" itemscope="itemscope">
+	    <div class="wrapper">
+		    <div class="col-1-2"><%=ConfigurationManager.AppSettings["AppName"] %> par <a href="http://www.ztb-media.fr" target="_blank">ZTB Media</a></div>
+	    </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>window.jQuery || document.write('<script src="<%=ResolveClientUrl("~/scripts/jquery.min.js") %>"><\/script>')</script>
+    <script src="<%=ResolveClientUrl("~/scripts/bootstrap.min.js") %>"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="<%=ResolveClientUrl("~/scripts/ie10-viewport-bug-workaround.js") %>"></script>
+</body>
+</html>

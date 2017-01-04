@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.master.cs" Inherits="ZM.iChooChoo.Client.Web.Principal" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<link rel="stylesheet" id="appstyle" href="~/styles/style.css" />
+	<link rel="stylesheet" id="gfonts" href="https://fonts.googleapis.com/css?family=Sanchez:400,400italic|Maven+Pro:400,700" type='text/css' />
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header class="main-header">
+	    <div class="wrapper">
+		    <div class="logo-wrap">
+			    <asp:HyperLink runat="server" ID="hypRoot" NavigateUrl="~" CssClass="logotext" />
+		    </div>
+
+		    <nav class="main-menu" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+			    <a id="toggle-menu-icon"><span class="icon-list"></span></a>
+			    <ul id="menu-principal" class="top-level-menu">
+				    <li id="menu-item-1" class="menu-item menu-item-object-page current-menu-item page_item"><asp:HyperLink runat="server" ID="hypMnuItm1" NavigateUrl="~">Home</asp:HyperLink></li>
+				    <li id="menu-item-2" class="menu-item menu-item-object-page page_item menu-item-has-children"><a href="#">Settings</a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><asp:HyperLink runat="server" ID="hypMnuItm21" NavigateUrl="~/settings">Modules</asp:HyperLink></li>
+                            <li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><asp:HyperLink runat="server" ID="hypMnuItm22" NavigateUrl="~/settings/logview.aspx">View server log</asp:HyperLink></li>
+                        </ul>
+				    </li>
+			    </ul>
+		    </nav>
+	    </div>
+    </header>
+    <section class="description headerbar">
+	    <div class="wrapper">
+		    <h1><%=PageTitle %></h1>
+	    </div>
+    </section>
+
+    <form id="form1" runat="server">
+    <section class="content">
+	    <div class="wrapper">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+    </section>
+    </form>
+
+    <footer class="main-footer" role="contentinfo" itemscope="itemscope">
+	    <div class="wrapper">
+		    <div class="col-1-2"><%=ConfigurationManager.AppSettings["AppName"] %> par <a href="http://www.ztb-media.fr" target="_blank">ZTB Media</a></div>
+	    </div>
+    </footer>
+
+</body>
+</html>
