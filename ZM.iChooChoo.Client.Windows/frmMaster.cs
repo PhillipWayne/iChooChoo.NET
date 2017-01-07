@@ -26,8 +26,13 @@ namespace ZM.iChooChoo.Client.Windows
     {
         public IccClient Client { get; set; }
 
+        private frmSplash SplashScreen { get; set; }
+
         public frmMaster()
         {
+            SplashScreen = new frmSplash(3);
+            SplashScreen.Show();
+
             InitializeComponent();
 
             this.Location = new Point(Configuration.Config.MainWindowSettings.WindowLeft, Configuration.Config.MainWindowSettings.WindowTop);
@@ -58,6 +63,7 @@ namespace ZM.iChooChoo.Client.Windows
             PrintStatus(string.Format("Connecting to server '{0}' on command port...", Configuration.Config.ServerSettings.ServerName));
 
             Client = new IccClient(Configuration.Config.ServerSettings.ServerName, Configuration.Config.ServerSettings.ServerCommandPort, Configuration.Config.ServerSettings.ServerLogPort);
+            Client.LogClient.EntryReceived += LogClient_EntryReceived;
             if (!Client.Connected)
             {
                 PrintStatus(Client.LastError);
@@ -67,9 +73,9 @@ namespace ZM.iChooChoo.Client.Windows
             {
                 PrintConnectStatus(ConnectionStatus.Connected);
                 PrintStatus("Connected");
-                Client.LogClient.EntryReceived += LogClient_EntryReceived;
                 PopulateModules();
             }
+            SplashScreen.CanBeClosed = true;
             this.Cursor = Cursors.Default;
         }
 
@@ -97,6 +103,7 @@ namespace ZM.iChooChoo.Client.Windows
                 var mnu = new ToolStripMenuItem(m.ToString());
                 mnu.Click += mnuModulesItems_Click;
                 mnu.Tag = m;
+                mnu.Image = m.Icon;
                 mnuModules.DropDownItems.Add(mnu);
             }
 
@@ -158,7 +165,12 @@ namespace ZM.iChooChoo.Client.Windows
         private void mnuModulesItems_Click(object sender, EventArgs e)
         {
             var mod = (sender as ToolStripMenuItem).Tag as IModule;
-            if (mod.Type == ICCConstants.BICCP_GRP_LIGHTING)
+            if (mod.Type == ICCConstants.BICCP_GRP_GENPURP)
+            {
+                var f = new frmTest20(Client, mod as GenPurpModule);
+                f.Show();
+            }
+            else if (mod.Type == ICCConstants.BICCP_GRP_LIGHTING)
             {
                 var f = new frmTest21(Client, mod as LightingModule);
                 f.Show();

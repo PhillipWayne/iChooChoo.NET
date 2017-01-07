@@ -1220,7 +1220,7 @@
             this.txtLinear2sMillisStep.Name = "txtLinear2sMillisStep";
             this.txtLinear2sMillisStep.Size = new System.Drawing.Size(40, 20);
             this.txtLinear2sMillisStep.TabIndex = 88;
-            this.txtLinear2sMillisStep.Text = "4";
+            this.txtLinear2sMillisStep.Text = "8";
             this.toolTip1.SetToolTip(this.txtLinear2sMillisStep, "millisStep");
             // 
             // chkLinear1sLinear
@@ -1919,6 +1919,7 @@
             this.grpDimmable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpDimmable.Controls.Add(this.barA);
             this.grpDimmable.Controls.Add(this.lblOutputDimF);
             this.grpDimmable.Controls.Add(this.lblOutputDimE);
             this.grpDimmable.Controls.Add(this.lblOutputDimD);
@@ -1930,10 +1931,9 @@
             this.grpDimmable.Controls.Add(this.lblOutputDimA);
             this.grpDimmable.Controls.Add(this.barC);
             this.grpDimmable.Controls.Add(this.barB);
-            this.grpDimmable.Controls.Add(this.barA);
             this.grpDimmable.Location = new System.Drawing.Point(12, 554);
             this.grpDimmable.Name = "grpDimmable";
-            this.grpDimmable.Size = new System.Drawing.Size(978, 179);
+            this.grpDimmable.Size = new System.Drawing.Size(978, 149);
             this.grpDimmable.TabIndex = 3;
             this.grpDimmable.TabStop = false;
             this.grpDimmable.Text = "Dimmable Outputs";
@@ -1941,9 +1941,9 @@
             // lblOutputDimF
             // 
             this.lblOutputDimF.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOutputDimF.Location = new System.Drawing.Point(672, 95);
+            this.lblOutputDimF.Location = new System.Drawing.Point(672, 75);
             this.lblOutputDimF.Name = "lblOutputDimF";
-            this.lblOutputDimF.Size = new System.Drawing.Size(300, 28);
+            this.lblOutputDimF.Size = new System.Drawing.Size(300, 22);
             this.lblOutputDimF.TabIndex = 11;
             this.lblOutputDimF.Text = "Output F : 0";
             this.lblOutputDimF.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1951,9 +1951,9 @@
             // lblOutputDimE
             // 
             this.lblOutputDimE.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOutputDimE.Location = new System.Drawing.Point(339, 95);
+            this.lblOutputDimE.Location = new System.Drawing.Point(339, 75);
             this.lblOutputDimE.Name = "lblOutputDimE";
-            this.lblOutputDimE.Size = new System.Drawing.Size(300, 28);
+            this.lblOutputDimE.Size = new System.Drawing.Size(300, 22);
             this.lblOutputDimE.TabIndex = 10;
             this.lblOutputDimE.Text = "Output E : 0";
             this.lblOutputDimE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1961,9 +1961,9 @@
             // lblOutputDimD
             // 
             this.lblOutputDimD.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOutputDimD.Location = new System.Drawing.Point(6, 95);
+            this.lblOutputDimD.Location = new System.Drawing.Point(6, 75);
             this.lblOutputDimD.Name = "lblOutputDimD";
-            this.lblOutputDimD.Size = new System.Drawing.Size(300, 28);
+            this.lblOutputDimD.Size = new System.Drawing.Size(300, 22);
             this.lblOutputDimD.TabIndex = 9;
             this.lblOutputDimD.Text = "Output E : 0";
             this.lblOutputDimD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1971,7 +1971,7 @@
             // barF
             // 
             this.barF.LargeChange = 10;
-            this.barF.Location = new System.Drawing.Point(672, 126);
+            this.barF.Location = new System.Drawing.Point(672, 97);
             this.barF.Maximum = 255;
             this.barF.Name = "barF";
             this.barF.Size = new System.Drawing.Size(300, 45);
@@ -1985,7 +1985,7 @@
             // barE
             // 
             this.barE.LargeChange = 10;
-            this.barE.Location = new System.Drawing.Point(339, 126);
+            this.barE.Location = new System.Drawing.Point(339, 97);
             this.barE.Maximum = 255;
             this.barE.Name = "barE";
             this.barE.Size = new System.Drawing.Size(300, 45);
@@ -1999,7 +1999,7 @@
             // barD
             // 
             this.barD.LargeChange = 10;
-            this.barD.Location = new System.Drawing.Point(6, 126);
+            this.barD.Location = new System.Drawing.Point(6, 97);
             this.barD.Maximum = 255;
             this.barD.Name = "barD";
             this.barD.Size = new System.Drawing.Size(300, 45);
@@ -2013,9 +2013,9 @@
             // lblOutputDimC
             // 
             this.lblOutputDimC.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOutputDimC.Location = new System.Drawing.Point(672, 16);
+            this.lblOutputDimC.Location = new System.Drawing.Point(672, 13);
             this.lblOutputDimC.Name = "lblOutputDimC";
-            this.lblOutputDimC.Size = new System.Drawing.Size(300, 28);
+            this.lblOutputDimC.Size = new System.Drawing.Size(300, 22);
             this.lblOutputDimC.TabIndex = 5;
             this.lblOutputDimC.Text = "Output C : 0";
             this.lblOutputDimC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2023,9 +2023,9 @@
             // lblOutputDimB
             // 
             this.lblOutputDimB.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOutputDimB.Location = new System.Drawing.Point(339, 16);
+            this.lblOutputDimB.Location = new System.Drawing.Point(339, 13);
             this.lblOutputDimB.Name = "lblOutputDimB";
-            this.lblOutputDimB.Size = new System.Drawing.Size(300, 28);
+            this.lblOutputDimB.Size = new System.Drawing.Size(300, 22);
             this.lblOutputDimB.TabIndex = 4;
             this.lblOutputDimB.Text = "Output B : 0";
             this.lblOutputDimB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2033,9 +2033,9 @@
             // lblOutputDimA
             // 
             this.lblOutputDimA.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOutputDimA.Location = new System.Drawing.Point(6, 16);
+            this.lblOutputDimA.Location = new System.Drawing.Point(6, 13);
             this.lblOutputDimA.Name = "lblOutputDimA";
-            this.lblOutputDimA.Size = new System.Drawing.Size(300, 28);
+            this.lblOutputDimA.Size = new System.Drawing.Size(300, 22);
             this.lblOutputDimA.TabIndex = 3;
             this.lblOutputDimA.Text = "Output A : 0";
             this.lblOutputDimA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2043,7 +2043,7 @@
             // barC
             // 
             this.barC.LargeChange = 10;
-            this.barC.Location = new System.Drawing.Point(672, 47);
+            this.barC.Location = new System.Drawing.Point(672, 35);
             this.barC.Maximum = 255;
             this.barC.Name = "barC";
             this.barC.Size = new System.Drawing.Size(300, 45);
@@ -2057,7 +2057,7 @@
             // barB
             // 
             this.barB.LargeChange = 10;
-            this.barB.Location = new System.Drawing.Point(339, 47);
+            this.barB.Location = new System.Drawing.Point(339, 35);
             this.barB.Maximum = 255;
             this.barB.Name = "barB";
             this.barB.Size = new System.Drawing.Size(300, 45);
@@ -2071,7 +2071,7 @@
             // barA
             // 
             this.barA.LargeChange = 10;
-            this.barA.Location = new System.Drawing.Point(6, 47);
+            this.barA.Location = new System.Drawing.Point(6, 35);
             this.barA.Maximum = 255;
             this.barA.Name = "barA";
             this.barA.Size = new System.Drawing.Size(300, 45);
@@ -2086,16 +2086,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1002, 745);
+            this.ClientSize = new System.Drawing.Size(1002, 715);
             this.Controls.Add(this.grpDimmable);
             this.Controls.Add(this.grpActions);
             this.Controls.Add(this.grpDirect);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmTest21";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "iChooChoo Client";
+            this.Text = "Lighting Module";
             this.grpDirect.ResumeLayout(false);
             this.grpActions.ResumeLayout(false);
             this.grpActions.PerformLayout();

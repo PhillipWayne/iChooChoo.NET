@@ -118,19 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="iChooChoo icon 48 Transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iChooChoo icon 48 Transparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ModuleType00" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\New.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Logo-ZTBMedia-URL-Noir-h64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo-ZTBMedia-URL-Noir-h64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ModuleType10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Traction.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="iChooChoo Logo h64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iChooChoo Logo h64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ModuleType20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\General Purpose.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ZTBMedia-AboutBox500" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ZTBMedia-AboutBox500.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ModuleType21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Lighting.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Logo-ZTBMedia-Noir-h64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo-ZTBMedia-Noir-h64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ModuleTypeFF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Unknown.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -25,6 +25,8 @@ namespace ZM.iChooChoo.Client.Windows
 
             InitializeComponent();
 
+            this.Text = string.Format("Lighting Module: {0}", Module.ToString());
+
             PopulateOutputLists(this);
 
 #if DEBUG

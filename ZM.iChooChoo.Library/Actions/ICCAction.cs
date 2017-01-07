@@ -10,6 +10,13 @@ using ZM.iChooChoo.Library.Log;
 namespace ZM.iChooChoo.Library.Actions
 {
     /// <summary>
+    /// Event handler for Actions.
+    /// </summary>
+    /// <param name="sender">Sender object.</param>
+    /// <param name="e">Event Data.</param>
+    public delegate void ActionEventHandler(object sender, ActionEventArgs e);
+
+    /// <summary>
     /// Abstract class containing a module action.
     /// </summary>
     public abstract class ICCAction : IICCAction

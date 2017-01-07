@@ -71,6 +71,7 @@ namespace ZM.iChooChoo.Client
             {
                 try
                 {
+                    // If a socket exists and is not connected, free the variable to enable a new socket creation.
                     if (_clientSocket != null)
                         if (!_clientSocket.Connected)
                         {
@@ -78,6 +79,7 @@ namespace ZM.iChooChoo.Client
                             _clientSocket = null;
                         }
 
+                    // If no active socket, create a new one.
                     if (_clientSocket == null)
                     {
                         var IPs = Dns.GetHostAddresses(iChooChoo_Server);
@@ -136,29 +138,38 @@ namespace ZM.iChooChoo.Client
         }
 
         /// <summary>
-        /// Sends a request to the iChooChoo server.
+        /// Worker loop to receive log data.
         /// </summary>
-        /// <param name="sData">Request to send.</param>
-        /// <returns>Response from the server.</returns>
         protected virtual void Loop()
         {
-            if (ClientSocket != null)
+            try
             {
-                Send("HELO 0\n");
-
-                string sRecv = Receive();
-                if (sRecv == "+OK")
+                if (ClientSocket != null)
                 {
-                    while (Thread.CurrentThread.IsAlive)
+                    Send("HELO 0\n");
+
+                    string sRecv = Receive();
+                    if (sRecv == "+OK")
                     {
-                        string s = Receive();
-                        var entry = fastJSON.JSON.ToObject<LogEntry>(s);
-                        ReceiveEntry(entry);
-                        Send("+OK\n");
+                        while (Thread.CurrentThread.IsAlive)
+                        {
+                            string s = Receive();
+                            var entry = fastJSON.JSON.ToObject<LogEntry>(s);
+                            ReceiveEntry(entry);
+                            Send("+OK\n");
+                        }
                     }
+                    else
+                        throw new ApplicationException("Log Server acknowledgement error.");
                 }
-                else
-                    throw new ApplicationException("Log Server acknowledgement error.");
+            }
+            catch (Exception ex)
+            {
+                Connected = false;
+                var l = new LogEntry();
+                l.LogLevel = LogLevel.Error;
+                l.Text = string.Format("Error communicating to log server: {0}", ex.Message);
+                ReceiveEntry(l);
             }
         }
 

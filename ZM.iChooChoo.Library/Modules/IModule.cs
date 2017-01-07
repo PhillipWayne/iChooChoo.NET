@@ -1,20 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ZM.iChooChoo.Library.Actions;
 using ZM.iChooChoo.Library.Config;
 using ZM.iChooChoo.Library.Log;
 
 namespace ZM.iChooChoo.Library.Modules
 {
-    /// <summary>
-    /// Event handler for Actions.
-    /// </summary>
-    /// <param name="sender">Sender object.</param>
-    /// <param name="e">Event Data.</param>
-    public delegate void ActionEventHandler(object sender, ActionEventArgs e);
-    
     /// <summary>
     /// Interface to Modules.
     /// </summary>
@@ -64,6 +59,11 @@ namespace ZM.iChooChoo.Library.Modules
         /// Gets the complete version number.
         /// </summary>
         string Version { get; }
+
+        /// <summary>
+        /// Gets the icon of the module.
+        /// </summary>
+        Image Icon { get; }
 
         /// <summary>
         /// Writes the status of the module.

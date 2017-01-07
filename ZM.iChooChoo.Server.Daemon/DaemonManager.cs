@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using ZM.iChooChoo.Library;
+using ZM.iChooChoo.Library.Actions;
 using ZM.iChooChoo.Library.BICCP;
 using ZM.iChooChoo.Library.Log;
 using ZM.iChooChoo.Server.BICCP;
@@ -90,7 +91,7 @@ namespace ZM.iChooChoo.Server.Daemon
         /// </summary>
         /// <param name="sender">Module instance sending the action.</param>
         /// <param name="e">EventArgs. Will contain the new action.</param>
-        protected virtual void Modules_ActionRaised(object sender, Library.Modules.ActionEventArgs e)
+        protected virtual void Modules_ActionRaised(object sender, ActionEventArgs e)
         {
             // Each time a module raises an action, stack it to the actions list
             Communicator.AddMessage(e.Action);

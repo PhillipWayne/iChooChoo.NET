@@ -52,7 +52,7 @@ namespace ZM.iChooChoo.Library
 
         // Version of application.
         public const int PROG_VERSION_MAJ = 0;
-        public const int PROG_VERSION_MIN = 37;
+        public const int PROG_VERSION_MIN = 40;
         public const int PROG_VERSION_BLD = 0;
 
         // Data size is Packet size - 4

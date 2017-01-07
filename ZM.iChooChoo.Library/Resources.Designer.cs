@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ZM.iChooChoo.Client.Windows.Properties {
+namespace ZM.iChooChoo.Library {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace ZM.iChooChoo.Client.Windows.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ZM.iChooChoo.Client.Windows.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ZM.iChooChoo.Library.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,52 +61,52 @@ namespace ZM.iChooChoo.Client.Windows.Properties {
         }
         
         /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        ///   Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
         /// </summary>
-        internal static System.Drawing.Bitmap iChooChoo_icon_48_Transparent {
+        internal static System.Drawing.Icon ModuleType00 {
             get {
-                object obj = ResourceManager.GetObject("iChooChoo icon 48 Transparent", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                object obj = ResourceManager.GetObject("ModuleType00", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         
         /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        ///   Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
         /// </summary>
-        internal static System.Drawing.Bitmap iChooChoo_Logo_h64 {
+        internal static System.Drawing.Icon ModuleType10 {
             get {
-                object obj = ResourceManager.GetObject("iChooChoo Logo h64", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                object obj = ResourceManager.GetObject("ModuleType10", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         
         /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        ///   Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
         /// </summary>
-        internal static System.Drawing.Bitmap Logo_ZTBMedia_Noir_h64 {
+        internal static System.Drawing.Icon ModuleType20 {
             get {
-                object obj = ResourceManager.GetObject("Logo-ZTBMedia-Noir-h64", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                object obj = ResourceManager.GetObject("ModuleType20", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         
         /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        ///   Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
         /// </summary>
-        internal static System.Drawing.Bitmap Logo_ZTBMedia_URL_Noir_h64 {
+        internal static System.Drawing.Icon ModuleType21 {
             get {
-                object obj = ResourceManager.GetObject("Logo-ZTBMedia-URL-Noir-h64", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                object obj = ResourceManager.GetObject("ModuleType21", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         
         /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        ///   Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
         /// </summary>
-        internal static System.Drawing.Bitmap ZTBMedia_AboutBox500 {
+        internal static System.Drawing.Icon ModuleTypeFF {
             get {
-                object obj = ResourceManager.GetObject("ZTBMedia-AboutBox500", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                object obj = ResourceManager.GetObject("ModuleTypeFF", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
     }

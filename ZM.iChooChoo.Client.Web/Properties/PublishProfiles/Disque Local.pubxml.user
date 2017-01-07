@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Ce fichier est utilisé par le processus de publication/package de votre projet Web. Vous pouvez personnaliser le comportement de ce processus
+en modifiant ce fichier MSBuild. Pour en savoir plus à ce sujet, consultez la page http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\$Dev\iChooChoo_website</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/fastJSON.dll">
+      <publishTime>01/01/2017 21:33:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>11/11/2016 00:44:01</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>11/11/2016 00:44:01</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>11/11/2016 00:44:01</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>11/11/2016 00:44:01</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>11/11/2016 00:44:01</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>11/11/2016 00:44:01</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>11/11/2016 00:44:01</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>11/11/2016 00:44:01</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>11/11/2016 00:44:01</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>11/11/2016 00:44:01</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>11/11/2016 00:44:01</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>11/11/2016 00:44:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>11/11/2016 00:44:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>11/11/2016 00:44:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>11/11/2016 00:44:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>11/11/2016 00:44:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>11/11/2016 00:44:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>11/11/2016 00:44:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>11/11/2016 00:44:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>11/11/2016 00:44:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>11/11/2016 00:44:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>11/11/2016 00:44:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>11/11/2016 00:44:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>11/11/2016 00:44:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>11/11/2016 00:44:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>11/11/2016 00:44:02</publishTime>
+    </File>
+    <File Include="bin/ZM.iChooChoo.Client.dll">
+      <publishTime>01/07/2017 10:28:32</publishTime>
+    </File>
+    <File Include="bin/ZM.iChooChoo.Client.Web.dll">
+      <publishTime>01/07/2017 10:28:35</publishTime>
+    </File>
+    <File Include="bin/ZM.iChooChoo.Library.dll">
+      <publishTime>01/07/2017 10:28:32</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>10/11/2016 21:47:41</publishTime>
+    </File>
+    <File Include="index.aspx">
+      <publishTime>10/11/2016 22:12:46</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>11/11/2016 00:44:03</publishTime>
+    </File>
+    <File Include="Principal.Master">
+      <publishTime>11/19/2016 14:15:55</publishTime>
+    </File>
+    <File Include="Principal2.Master">
+      <publishTime>11/18/2016 20:05:52</publishTime>
+    </File>
+    <File Include="scripts/bootstrap.js">
+      <publishTime>11/18/2016 20:05:52</publishTime>
+    </File>
+    <File Include="scripts/bootstrap.min.js">
+      <publishTime>11/18/2016 20:05:52</publishTime>
+    </File>
+    <File Include="scripts/ie-emulation-modes-warning.js">
+      <publishTime>11/18/2016 20:05:52</publishTime>
+    </File>
+    <File Include="scripts/ie10-viewport-bug-workaround.js">
+      <publishTime>11/18/2016 20:05:52</publishTime>
+    </File>
+    <File Include="scripts/jquery.min.js">
+      <publishTime>11/18/2016 20:05:52</publishTime>
+    </File>
+    <File Include="settings/index.aspx">
+      <publishTime>11/24/2016 23:41:58</publishTime>
+    </File>
+    <File Include="settings/logview.aspx">
+      <publishTime>11/19/2016 00:24:49</publishTime>
+    </File>
+    <File Include="settings/moduletest20.aspx">
+      <publishTime>11/24/2016 23:51:24</publishTime>
+    </File>
+    <File Include="settings/moduletest21.aspx">
+      <publishTime>11/25/2016 00:48:22</publishTime>
+    </File>
+    <File Include="styles/bootstrap.css">
+      <publishTime>11/18/2016 20:05:51</publishTime>
+    </File>
+    <File Include="styles/bootstrap.min.css">
+      <publishTime>11/18/2016 20:05:51</publishTime>
+    </File>
+    <File Include="styles/ie10-viewport-bug-workaround.css">
+      <publishTime>11/18/2016 20:05:51</publishTime>
+    </File>
+    <File Include="styles/style.css">
+      <publishTime>12/14/2016 00:39:10</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/06/2017 22:27:00</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

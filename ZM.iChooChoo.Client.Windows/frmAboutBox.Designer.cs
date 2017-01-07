@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAboutBox));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.picIcone = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblProgTitre = new System.Windows.Forms.Label();
             this.btnFermer = new System.Windows.Forms.Button();
@@ -40,12 +39,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lkbLink = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.lnkZTBMedia = new System.Windows.Forms.LinkLabel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.picIcone = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picIcone)).BeginInit();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picIcone)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -55,7 +57,7 @@
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(0, 64);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(80, 267);
+            this.panel1.Size = new System.Drawing.Size(80, 456);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -66,17 +68,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(56, 56);
             this.panel2.TabIndex = 1;
-            // 
-            // picIcone
-            // 
-            this.picIcone.BackColor = System.Drawing.Color.White;
-            this.picIcone.Image = global::ZM.iChooChoo.Client.Windows.Properties.Resources.iChooChoo_icon_48_Transparent;
-            this.picIcone.Location = new System.Drawing.Point(4, 4);
-            this.picIcone.Name = "picIcone";
-            this.picIcone.Size = new System.Drawing.Size(48, 48);
-            this.picIcone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picIcone.TabIndex = 0;
-            this.picIcone.TabStop = false;
             // 
             // panel3
             // 
@@ -101,7 +92,7 @@
             // btnFermer
             // 
             this.btnFermer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFermer.Location = new System.Drawing.Point(413, 296);
+            this.btnFermer.Location = new System.Drawing.Point(480, 485);
             this.btnFermer.Name = "btnFermer";
             this.btnFermer.Size = new System.Drawing.Size(75, 23);
             this.btnFermer.TabIndex = 4;
@@ -114,9 +105,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(121, 173);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 13);
+            this.label1.Size = new System.Drawing.Size(228, 13);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Achevé en 2017 par Stéphane Moitry";
+            this.label1.Text = "Developped in 2016-2017 by iChooChoo team.";
             // 
             // lblProgVersion
             // 
@@ -158,34 +149,87 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "iChooChoo is open source software maintained by ZTB Media.";
             // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Location = new System.Drawing.Point(124, 261);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(350, 247);
+            this.textBox1.TabIndex = 14;
+            this.textBox1.Text = resources.GetString("textBox1.Text");
+            // 
+            // panel5
+            // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.BackColor = System.Drawing.Color.Black;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(567, 64);
+            this.panel5.TabIndex = 15;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(121, 245);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(42, 13);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Credits:";
+            // 
             // lnkZTBMedia
             // 
-            this.lnkZTBMedia.BackColor = System.Drawing.Color.Transparent;
-            this.lnkZTBMedia.LinkColor = System.Drawing.Color.Transparent;
-            this.lnkZTBMedia.Location = new System.Drawing.Point(243, 3);
+            this.lnkZTBMedia.ActiveLinkColor = System.Drawing.Color.White;
+            this.lnkZTBMedia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lnkZTBMedia.BackColor = System.Drawing.Color.Black;
+            this.lnkZTBMedia.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lnkZTBMedia.DisabledLinkColor = System.Drawing.Color.White;
+            this.lnkZTBMedia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkZTBMedia.ForeColor = System.Drawing.Color.White;
+            this.lnkZTBMedia.Image = global::ZM.iChooChoo.Client.Windows.Properties.Resources.ZTBMedia_AboutBox500;
+            this.lnkZTBMedia.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lnkZTBMedia.LinkColor = System.Drawing.Color.White;
+            this.lnkZTBMedia.Location = new System.Drawing.Point(304, 0);
             this.lnkZTBMedia.Name = "lnkZTBMedia";
-            this.lnkZTBMedia.Size = new System.Drawing.Size(257, 19);
+            this.lnkZTBMedia.Size = new System.Drawing.Size(263, 24);
             this.lnkZTBMedia.TabIndex = 12;
             this.lnkZTBMedia.TabStop = true;
-            this.lnkZTBMedia.Text = "                                                                                 " +
-    "  ";
+            this.lnkZTBMedia.Text = "                                                               ";
+            this.lnkZTBMedia.VisitedLinkColor = System.Drawing.Color.White;
             this.lnkZTBMedia.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkZTBMedia_LinkClicked);
             // 
             // panel4
             // 
-            this.panel4.BackgroundImage = global::ZM.iChooChoo.Client.Windows.Properties.Resources.ZTBMedia_AboutBox500;
-            this.panel4.Controls.Add(this.lnkZTBMedia);
+            this.panel4.BackgroundImage = global::ZM.iChooChoo.Client.Windows.Properties.Resources.Logo_ZTBMedia_Noir_h64;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(500, 64);
+            this.panel4.Size = new System.Drawing.Size(218, 64);
             this.panel4.TabIndex = 13;
+            // 
+            // picIcone
+            // 
+            this.picIcone.BackColor = System.Drawing.Color.White;
+            this.picIcone.Image = global::ZM.iChooChoo.Client.Windows.Properties.Resources.iChooChoo_icon_48_Transparent;
+            this.picIcone.Location = new System.Drawing.Point(4, 4);
+            this.picIcone.Name = "picIcone";
+            this.picIcone.Size = new System.Drawing.Size(48, 48);
+            this.picIcone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picIcone.TabIndex = 0;
+            this.picIcone.TabStop = false;
             // 
             // frmAboutBox
             // 
             this.AcceptButton = this.btnFermer;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(500, 331);
+            this.ClientSize = new System.Drawing.Size(567, 520);
+            this.Controls.Add(this.lnkZTBMedia);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lkbLink);
@@ -196,6 +240,7 @@
             this.Controls.Add(this.lblProgTitre);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -206,9 +251,8 @@
             this.Text = "A propos de ...";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picIcone)).EndInit();
             this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picIcone)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,7 +271,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.LinkLabel lkbLink;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.LinkLabel lnkZTBMedia;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.LinkLabel lnkZTBMedia;
     }
 }

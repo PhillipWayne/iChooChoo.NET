@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using ZM.iChooChoo.Library.Actions;
 
-namespace ZM.iChooChoo.Library.Modules
+namespace ZM.iChooChoo.Library.Actions
 {
     /// <summary>
     /// Event data for Actions.

@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using ZM.iChooChoo.Library;
+using ZM.iChooChoo.Library.Actions;
 using ZM.iChooChoo.Library.Modules;
 
 namespace ZM.iChooChoo.Client
@@ -112,7 +113,8 @@ namespace ZM.iChooChoo.Client
             RefreshModulesList();
             Timer = new System.Timers.Timer() { Interval = 1000, AutoReset = false };
             Timer.Elapsed += Timer_Elapsed;
-            ConnectionKeepAlive = true;
+            if (Connected)
+                ConnectionKeepAlive = true;
         }
 
         /// <summary>
@@ -189,6 +191,8 @@ namespace ZM.iChooChoo.Client
                         _clientSocket = null;
                     }
                     Connected = false;
+                    if (Timer != null)
+                        Timer.Stop();
                     throw new Exception(string.Format("iChooChoo server '{0}' on port {1} not responding", iChooChoo_Server, iChooChoo_CommandPort), ex);
                 }
                 catch (Exception)
@@ -199,6 +203,8 @@ namespace ZM.iChooChoo.Client
                         _clientSocket = null;
                     }
                     Connected = false;
+                    if (Timer != null)
+                        Timer.Stop();
                     throw;
                 }
             }

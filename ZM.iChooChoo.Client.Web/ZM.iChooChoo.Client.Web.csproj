@@ -67,6 +67,7 @@
     <Content Include="Principal.Master" />
     <Content Include="packages.config" />
     <Content Include="Principal2.Master" />
+    <None Include="Properties\PublishProfiles\Disque Local.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

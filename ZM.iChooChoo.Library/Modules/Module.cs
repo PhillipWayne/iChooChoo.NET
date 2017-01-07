@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -54,6 +55,11 @@ namespace ZM.iChooChoo.Library.Modules
         {
             get { return string.Format("{0}.{1}.{2}", Major, Minor, Build); }
         }
+
+        /// <summary>
+        /// Gets the icon of the module.
+        /// </summary>
+        public virtual Image Icon { get { return (Resources.ResourceManager.GetObject(string.Format("ModuleType{0:X2}", this.Type)) as System.Drawing.Icon).ToBitmap(); } }
 
         /// <summary>
         /// Gets the Module type description.
@@ -125,7 +131,7 @@ namespace ZM.iChooChoo.Library.Modules
         /// <returns>String representing this object.</returns>
         public override string ToString()
         {
-            return string.Format("0x{0:X2} - {1} (0x{2:X2} - {3})", ID, Description, Type, TypeDescription);
+            return string.Format("0x{0:X2} - {1} (0x{2:X2} - {3} - v{4}.{5}.{6})", ID, Description, Type, TypeDescription, Major, Minor, Build);
         }
 
         /// <summary>
